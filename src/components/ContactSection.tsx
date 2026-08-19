@@ -1,16 +1,8 @@
 // src/components/ContactSection.tsx
-import React, { useState } from 'react';
+import type { FC } from 'react';
 import { motion } from 'framer-motion';
 
-export const ContactSection: React.FC = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [sent, setSent] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-  };
-
+export const ContactSection: FC = () => {
   return (
     <footer
       id="contact"
